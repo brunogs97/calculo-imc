@@ -5,32 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="img/favicon.ico">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Bruno - Nutrição</title>
 </head>
 <body>
-    <img src="img/img-balanca.webp" alt="Balança de peso">
-    <h1>Programa Cálculo do Peso</h1>
+    <div class="conteudo__principal">
+        <img src="img/img-balanca.webp" alt="Balança de peso">
+        <h1>Programa Cálculo do Peso</h1>
 
-    <form>
-        <p>
-            Nome:
-            <input type="text" id="inNome" required>
-        </p>
-        <p>
-            Sexo:
-            <input type="radio" id="inMasculino" required>Masculino
-            <input type="radio" id="inFeminino" required>Feminino
-        </p>
-        <p>
-            Altura:
-            <input type="number" step="0.01" min="0" id="inAltura" required>
-        </p>
+        <form>
+            <p>
+                Nome:
+                <input type="text" id="inNome" required>
+            </p>
+            <p>
+                Sexo:
+                <input type="radio" id="inMasculino" required>Masculino
+                <input type="radio" id="inFeminino" required>Feminino
+            </p>
+            <p>
+                Altura:
+                <input type="number" step="0.01" min="0" id="inAltura" required>
+            </p>
 
-        <input type="submit" value="Calcular Peso Ideal">
-        <input type="reset" value="Limpar Campos">
-    </form>
-
-    <h3></h3>
+            <div class="botao">
+                <input type="reset" value="Limpar Campos">
+                <input type="submit" value="Calcular Peso Ideal">
+            </div>
+        </form>
+        <h3></h3>   
+    </div>
 
     <script src="index.js"></script>
 </body>
