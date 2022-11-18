@@ -7,26 +7,26 @@ body {
     border: 1px solid #00BFFF;
     padding: 32px;
     width: 50vw;
-    height: 35vh;
+    height: 50vh;
     margin: 10% auto 0 auto;
 }
 
-img { 
-    float: left; 
-    height: 300px; 
-    width: 500px;
+img {
+    float: left;
+    height: 200px;
+    width: 300px;
     margin-right: 20px;
 }
 
-h1 { 
+h1 {
     font-size: 1.5em;
     font-weight: 700;
     text-align: center;
     border-bottom-style: inset;
-    margin: 1em 0 .5em 0;
+    margin: 0 0 .5em 0;
 }
 
-form input {
+.formulario {
     padding: 8px;
 }
 
@@ -46,31 +46,38 @@ h3 {
     text-align: right;
     color: #363636;
 }
- 
-@media screen and (max-width: 480px) {
+
+@media screen and (max-width: 1024px) {
     .conteudo__principal {
-        width: 100vw;
-        height: 25vh;
+        width: 96vw;
+        height: 30vh;
+        padding: 8px 0 8px 8px;
     }
-    
+
     img {
         width: 30vw;
         height: 25vw;
     }
 
     h1 {
-        margin: 0 0 .5em; 
+        margin: 0 0 .5em 0;
         font-size: 1em;
+        text-align: left;
     }
 
-    form input {
-        padding: 0;
+    p {
+        font-size: 14px;
     }
-    
+
+    .formulario {
+        padding: .3em;
+        width: 155px;
+    }
+
     input {
-        margin: .5em 0;
+        margin: .5em .3em;
     }
-    
+
     .botao input {
         padding: 1em 1.5em;
         border-radius: 8px;
@@ -78,7 +85,48 @@ h3 {
 
     h3 {
         font-size: 1em;
-        text-align: center;
+        text-align: left;
+    }
+
+    @media screen and (max-width: 768px) {
+        .conteudo__principal {
+            width: 96vw;
+            height: 30vh;
+            padding: 8px 0 8px 8px;
+        }
+
+        img {
+            width: 30vw;
+            height: 25vw;
+        }
+
+        h1 {
+            margin: 0 0 .5em 0;
+            font-size: 1em;
+            text-align: left;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .formulario {
+            padding: .3em;
+            width: 155px;
+        }
+
+        input {
+            margin: .5em .3em;
+        }
+
+        .botao input {
+            padding: 1em 1.5em;
+            border-radius: 8px;
+        }
+
+        h3 {
+            font-size: 1em;
+            text-align: center;
+        }
     }
 }
-    
