@@ -13,9 +13,9 @@ frm.addEventListener("submit", (e) => {
 
     if(masculino == true) {
         peso = 22 * Math.pow(altura, 2);  // Math pow eleva ao quadrado
-        resp.innerText = `${nome}: Seu peso ideal é ${altura.toFixed(2)} Kg`; 
+        resp.innerText = `${nome}: Seu peso ideal é ${peso.toFixed(2)}Kg`; 
     } else {
         peso = 21 * Math.pow(altura, 2);
-        resp.innerText = `${nome}: Seu peso ideal é ${altura.toFixed(2)} Kg`;
+        resp.innerText = `${nome}: Seu peso ideal é ${peso.toFixed(2)}Kg`;
     }
 })
