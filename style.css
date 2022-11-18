@@ -46,11 +46,11 @@ h3 {
     text-align: right;
     color: #363636;
 }
-
-@media screen and (min-width: 390px) {
+ 
+@media screen and (max-width: 480px) {
     .conteudo__principal {
         width: 100vw;
-        height: 30vh;
+        height: 25vh;
     }
     
     img {
