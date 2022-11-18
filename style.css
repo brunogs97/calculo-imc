@@ -46,3 +46,39 @@ h3 {
     text-align: right;
     color: #363636;
 }
+
+@media screen and (min-width: 390px) {
+    .conteudo__principal {
+        width: 100vw;
+        height: 30vh;
+    }
+    
+    img {
+        width: 30vw;
+        height: 25vw;
+    }
+
+    h1 {
+        margin: 0 0 .5em; 
+        font-size: 1em;
+    }
+
+    form input {
+        padding: 0;
+    }
+    
+    input {
+        margin: .5em 0;
+    }
+    
+    .botao input {
+        padding: 1em 1.5em;
+        border-radius: 8px;
+    }
+
+    h3 {
+        font-size: 1em;
+        text-align: center;
+    }
+}
+    
